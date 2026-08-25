@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Joel Sonnino - Junior AI Engineer</title>
+  <title>Joel Sonnino - AI Engineer</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     * {
@@ -183,6 +183,7 @@
     .timeline-item:nth-child(2) { animation-delay: 0.2s; }
     .timeline-item:nth-child(3) { animation-delay: 0.3s; }
     .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+    .timeline-item:nth-child(5) { animation-delay: 0.5s; }
 
     @keyframes slideInLeft {
       to {
@@ -301,6 +302,7 @@
     .project-card:nth-child(4) { animation-delay: 0.4s; }
     .project-card:nth-child(5) { animation-delay: 0.5s; }
     .project-card:nth-child(6) { animation-delay: 0.6s; }
+    .project-card:nth-child(7) { animation-delay: 0.7s; }
 
     @keyframes slideUp {
       to {
@@ -428,6 +430,33 @@
       color: #94a3b8;
       font-size: 0.85rem;
       line-height: 1.4;
+    }
+
+    .extras-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 800px;
+      margin: 25px auto 0;
+    }
+
+    .extra-card {
+      padding: 25px;
+      background: rgba(15, 23, 42, 0.4);
+      border-radius: 12px;
+      border: 1px solid rgba(56, 189, 248, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .extra-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+
+    .extra-card .skill-title i {
+      color: #38bdf8;
+      margin-right: 8px;
     }
 
     /* Contact Section */
@@ -559,8 +588,8 @@
       <i class="fas fa-graduation-cap"></i>
     </div>
     <h1>Joel Sonnino</h1>
-    <p class="subtitle">Junior AI Engineer</p>
-    <p class="status">🎓 Currently Working at Datwave, a BIP company</p>
+    <p class="subtitle">AI Engineer</p>
+    <p class="status">🚀 AI Engineer at Datwave (BIP Group) — Rome, Italy</p>
     
     <div class="social-links">
       <a href="https://github.com/joelsonnino" target="_blank" aria-label="GitHub">
@@ -582,6 +611,22 @@
       <div class="timeline-item">
         <div class="timeline-header">
           <div>
+            <div class="timeline-title">AI Engineer</div>
+            <div class="timeline-company">Datwave (BIP Group)</div>
+            <div class="timeline-location">Rome, Italy</div>
+          </div>
+          <div class="timeline-date">January 2026 – Present</div>
+        </div>
+        <ul class="timeline-highlights">
+          <li>Contributed to the architecture and deployment of a multi-agent omnichannel AI system for a major retail company, replacing traditional customer care with intelligent Voice, Chat, and Email assistants using Dialogflow CX (Google)</li>
+          <li>Designed conversational flows handling complex customer inquiries across channels, integrating NLU models with backend systems for real-time order tracking, returns processing, and product recommendations</li>
+          <li>Implemented voice processing pipelines with speech-to-text and text-to-speech capabilities, achieving seamless handoff between AI and human agents while maintaining conversation context</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
             <div class="timeline-title">Data Science & AI Agents Developer Intern</div>
             <div class="timeline-company">Buff Technologies</div>
             <div class="timeline-location">Tel Aviv, Israel</div>
@@ -589,10 +634,10 @@
           <div class="timeline-date">June 2025 – September 2025</div>
         </div>
         <ul class="timeline-highlights">
-          <li>Built AI-powered Airflow DAG Intelligence Dashboard with Python, AWS, and Streamlit</li>
-          <li>Developed multi-agent anomaly detection system using Snowflake and LLM-powered agents</li>
-          <li>Created automated Data Quality Control framework, achieving 95% test coverage</li>
-          <li>Reduced manual QA by 8+ hours/week and cut incident MTTR by 60%</li>
+          <li>Designed an Intelligent Dashboard for Airflow DAGs with Python, Apache Airflow, AWS, and Ollama — inspecting DAG code, analyzing logs, and monitoring execution metrics to auto-generate health scores and recommendations</li>
+          <li>Cut MTTR by 60% and detected silent failures up to 24 hours in advance</li>
+          <li>Built a multi-agent anomaly detection system on Snowflake, automating daily scans of 15TB tables with LLM-powered agents</li>
+          <li>Designed an automated Data Quality framework for Snowflake with Python and SQL, achieving 95% test coverage and enabling validation directly within CI/CD pipelines</li>
         </ul>
       </div>
 
@@ -622,9 +667,9 @@
           <div class="timeline-date">Sept 2019 – Jan 2025</div>
         </div>
         <ul class="timeline-highlights">
-          <li>Founded and led Utopia into the leading event company in South Rome's nightclub scene, reaching over 60% market share in its niche</li>
-          <li>Managed and motivated a large team of young professionals, leading public relations, partnerships, and operational execution</li>
-          <li>Built strategic collaborations with brands to increase event budgets and elevate production quality</li>
+          <li>Founded Utopia and scaled it into the leading event organization in the South Rome nightlife scene, achieving over 60% market share within its niche</li>
+          <li>Led and managed a team of over 100 members, overseeing public relations and full operational execution of events</li>
+          <li>Established strategic brand collaborations to increase profitability and elevate production quality</li>
         </ul>
       </div>
     </div>
@@ -641,16 +686,30 @@
             <div class="timeline-company">LUISS Guido Carli</div>
             <div class="timeline-location">Rome, Italy</div>
           </div>
-          <div class="timeline-date">Sept 2024 – Present</div>
+          <div class="timeline-date">Sept 2024 – July 2026</div>
         </div>
         <p class="timeline-description">
-          Currently pursuing advanced studies in machine learning, deep learning, and data visualization.
+          <strong>Final Grade:</strong> 110/110 cum laude — Medal of Excellence recipient. Taught in English.
         </p>
         <ul class="timeline-highlights">
           <li>Machine Learning and Deep Learning coursework</li>
           <li>Data Visualization with Tableau & Power BI</li>
           <li>Hands-on projects with real business applications</li>
         </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-title">Erasmus Exchange Program</div>
+            <div class="timeline-company">University of Agder</div>
+            <div class="timeline-location">Kristiansand, Norway</div>
+          </div>
+          <div class="timeline-date">Aug 2025 – Dec 2025</div>
+        </div>
+        <p class="timeline-description">
+          Semester abroad within the Master's program, studying in an international research environment.
+        </p>
       </div>
 
       <div class="timeline-item">
@@ -684,7 +743,7 @@
         <i class="project-icon fas fa-globe"></i>
         <h3 class="project-title">Web Development - Client Projects</h3>
         <p class="project-description">
-          Developed and deployed two professional websites for local businesses: a luxury lingerie e-commerce platform and a swimming instructor portfolio site.
+          Designed and developed a luxury underwear e-commerce generating €200K in annual revenue (conversion-optimized UX, payment integration, digital marketing), plus a professional site for swimming instructor services with an integrated booking system, local SEO, and mobile-first responsive design.
         </p>
         <div class="project-tech">
           <span class="tech-tag">HTML/CSS</span>
@@ -699,6 +758,23 @@
           <a href="https://www.istruttorenuotoroma.com/" target="_blank" class="project-link">
             <i class="fas fa-external-link-alt"></i> Istruttore Nuoto
           </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <i class="project-icon fab fa-whatsapp"></i>
+        <h3 class="project-title">Onmovo Rome - WhatsApp GenAI Chatbot</h3>
+        <p class="project-description">
+          Production WhatsApp chatbot for a scooter rental service, handling bookings and customer questions with an automated human handover when needed.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Make</span>
+          <span class="tech-tag">Gemini</span>
+          <span class="tech-tag">WhatsApp API</span>
+          <span class="tech-tag">Human Handover</span>
+        </div>
+        <div class="project-links">
+          <span class="tech-tag" style="padding: 8px 16px; border-radius: 20px;">In production</span>
         </div>
       </div>
 
@@ -815,21 +891,32 @@
             <i class="fas fa-database"></i>
           </div>
           <h3 class="skill-title">Data & ML</h3>
-          <p class="skill-list">Snowflake, Apache Airflow, Scikit-learn, LangChain</p>
+          <p class="skill-list">Snowflake, Apache Airflow, Scikit-learn, LLMs (Claude, Ollama, LangChain)</p>
         </div>
         <div class="skill-category">
           <div class="skill-icon">
             <i class="fas fa-chart-line"></i>
           </div>
           <h3 class="skill-title">Visualization</h3>
-          <p class="skill-list">Tableau, Power BI, Streamlit</p>
+          <p class="skill-list">Tableau, Power BI, Streamlit, Excel, PowerPoint</p>
         </div>
         <div class="skill-category">
           <div class="skill-icon">
             <i class="fas fa-cloud"></i>
           </div>
           <h3 class="skill-title">Cloud & Tools</h3>
-          <p class="skill-list">AWS (S3, CloudWatch), Docker, CI/CD</p>
+          <p class="skill-list">Google Cloud (Dialogflow CX), AWS (S3, CloudWatch), Docker, CI/CD</p>
+        </div>
+      </div>
+
+      <div class="extras-grid">
+        <div class="extra-card">
+          <h3 class="skill-title"><i class="fas fa-language"></i> Languages</h3>
+          <p class="skill-list">Italian (Native) &nbsp;·&nbsp; English C1 &nbsp;·&nbsp; Hebrew B2</p>
+        </div>
+        <div class="extra-card">
+          <h3 class="skill-title"><i class="fas fa-certificate"></i> Certifications</h3>
+          <p class="skill-list">Bloomberg Finance Fundamentals (2025) &nbsp;·&nbsp; Google Analytics Certification (ID: 185620655)</p>
         </div>
       </div>
     </div>
@@ -865,7 +952,7 @@
       </div>
       
       <div class="copyright">
-        © 2026 Joel Sonnino | Junior AI Engineer
+        © 2026 Joel Sonnino | AI Engineer
       </div>
     </div>
   </footer>
